@@ -16,7 +16,7 @@ Realizado por:
 
 1. [Estudio del problema y analisis del sistema](docs/estudio.md)
     - [Introducción](docs/estudio.md#introducción)
-    - [Funciones y rendimientos deseados](docs/estudio.md)
+    - [Funciones y rendimientos deseados](docs/estudio.md#funciones-y-rendimientos-deseados)
     - [Objetivos](docs/estudio.md)
     - [Modelado de la solución](docs/estudio.md)
     	- [Recursos humanos](docs/estudio.md)
