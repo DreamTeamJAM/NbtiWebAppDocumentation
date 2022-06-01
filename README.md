@@ -15,7 +15,7 @@ Realizado por:
 ## Índice
 
 1. [Estudio del problema y analisis del sistema](docs/estudio.md)
-    - [Introducción](docs/estudio.md)
+    - [Introducción](docs/estudio.md#introducción)
     - [Funciones y rendimientos deseados](docs/estudio.md)
     - [Objetivos](docs/estudio.md)
     - [Modelado de la solución](docs/estudio.md)
