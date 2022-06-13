@@ -59,7 +59,7 @@ El proyecto va a estar dividido en dos partes, el _front end_ y el _back end_.
 Para el _front_ utilizaremos la librería [_React.js_](https://reactjs.org/) como base del _framework_ que desarrollaremos para la aplicación web. Otras librerias que usaremos son [_redux_](https://redux.js.org/) para manejar estados globales,  [_formik_](https://formik.org/) para modelar formularios
 y [_Styled Components_](https://styled-components.com/) para estilizar la pagina usando componentes. Todos estos recursos son _open source_ y no suponen ningun gasto. Se pueden instalar desde la consola usado [_npm(Node Package Manager_](https://www.npmjs.com/)
 
-### BACK END
+#### BACK END
 
 El _back end_ va a ser desarrollado usando [_Java 11_](https://www.oracle.com/es/java/technologies/javase/jdk11-archive-downloads.html) 
  por compatibilidad con _AWS_. el proyecto usará [_spring_](https://spring.io/why-spring) como _framework_ base, haciendo uso de los componentes _spring boot_, que maneja el arranque del proyecto y maneja todas las dependencias internas, _spring data_, que nos permite hacer la conexión con base de datos y _spring security_, con utilidades para dar mayor seguridad al proyecto, limitando el trafico y usando [0Auth 2.0](https://auth0.com/docs/authenticate/protocols/oauth) para la autenticación. Todo este _framework_ tambien es de código abierto y sin coste. Para la base de datos usaremos [_PostgreSQL_](https://www.postgresql.org/). Un sistema relacional de base de datos basado en SQL, también _Open Source_. Tanto la base de datos como el proyecto de _spring_ estarán alojados en _AWS_.
