@@ -66,9 +66,25 @@ El _back end_ va a ser desarrollado usando [_Java 11_](https://www.oracle.com/es
 
 
 ## Presupuesto Final
+| Gastos | Semanal | Mensual | Anual |
+| ------------- | ------------- | ------------- | ------------- |
+| Recursos Humanos | 1.800€ | 7.200€ | 21.600€ |
+| Recursos Hardware| 600€ | 600€ | 600€ |
+| Recursos Software | 7,5€ | 30€ | 90€ |
+| Total | 2.407,5€ | 7.830€ | 22.290€ |
+ ### Recursos Humanos: 
+ Semanal son unos 1.800€, Mensual son unos 7.200€ y Anual son unos 21.600€.
 
-(Aqui podriamos adjuntar el presupuesto)
+ ### Recursos Hardware: 
+ Para estos recursos se gastó unos 600€ entre monitores, cables Hdmi y cables de Ethernet.
+ 
+ ### Recursos Software:
+ Amazon Web Services*: Su gastó fue de 30€ al mes.
+ 
+  ### Presupuesto Total:
+  En los tres meses se gastó 22.290€.
 
+(* Depende del tráfico que haya en la página.)
 
 ##### [siguiente Sección: Ejecución del Proyecto](ejecucion.md)
 
