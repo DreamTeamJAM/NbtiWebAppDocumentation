@@ -57,7 +57,7 @@ El proyecto va a estar dividido en dos partes, el _front end_ y el _back end_.
  #### FRONT END
 
 Para el _front_ utilizaremos la librería [_React.js_](https://reactjs.org/) como base del _framework_ que desarrollaremos para la aplicación web. Otras librerias que usaremos son [_redux_](https://redux.js.org/) para manejar estados globales,  [_formik_](https://formik.org/) para modelar formularios
-y [_Styled Components_](https://styled-components.com/) para estilizar la pagina usando componentes. Todos estos recursos son _open source_ y no suponen ningun gasto. Se pueden instalar desde la consola usado [_npm(Node Package Manager_](https://www.npmjs.com/)
+y [_Styled Components_](https://styled-components.com/) para estilizar la pagina usando componentes, para la generación de PDFs se usará el paquete [PdfMake](http://pdfmake.org/#/) .Todos estos recursos son _open source_ y no suponen ningun gasto. Se pueden instalar desde la consola usando [_npm(Node Package Manager_](https://www.npmjs.com/)
 
 #### BACK END
 

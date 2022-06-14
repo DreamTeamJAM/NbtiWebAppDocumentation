@@ -3,7 +3,7 @@
 
 Memoria del proyecto Integrado
 
-![](images/NBTI-logo.jpg)
+(Aqui una imagen del logo de nbti o lo que sea)
 
 Realizado por:
 - Javier Esmerado Vela
