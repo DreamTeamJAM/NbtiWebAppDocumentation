@@ -89,7 +89,7 @@ En el último paso pueden rellenar su experiencia de voluntariado, también form
 
 #### Barra de navegación:
 
-![navbar](../images/navbarunlogged.png)
+![navbar](../images/navbarUnlogged.png)
 ![navbar](../images/navbarLogged.png)
 
 En la barra de navegacion podemos acceder a las vistas principales, y si la sesión esta iniciada muestra la foto de perfil en un botón.
