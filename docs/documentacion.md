@@ -4,8 +4,6 @@
 
 ## Manual de instalación y configuración de la aplicación
 
-## Deployment:
-
 Para desplegrar Aws, primero necesitamos subir el paquete del proyecto con el comando:
 
 `mvn clean package shade:shade`
