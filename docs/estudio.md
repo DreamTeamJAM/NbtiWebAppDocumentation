@@ -65,6 +65,12 @@ El _back end_ va a ser desarrollado usando [_Java 11_](https://www.oracle.com/es
  por compatibilidad con _AWS_. el proyecto usará [_spring_](https://spring.io/why-spring) como _framework_ base, haciendo uso de los componentes _spring boot_, que maneja el arranque del proyecto y maneja todas las dependencias internas, _spring data_, que nos permite hacer la conexión con base de datos y _spring security_, con utilidades para dar mayor seguridad al proyecto, limitando el trafico y usando [0Auth 2.0](https://auth0.com/docs/authenticate/protocols/oauth) para la autenticación. Todo este _framework_ tambien es de código abierto y sin coste. Para la base de datos usaremos [_PostgreSQL_](https://www.postgresql.org/). Un sistema relacional de base de datos basado en SQL, también _Open Source_. Tanto la base de datos como el proyecto de _spring_ estarán alojados en _AWS_.
 
 
+#### Otras Herramientas
+
+Para el control de versiones usaremos github con repositorios privados, que permite hasta 3 colaboradores de manera gratuita, perfecto para nuestro equipo.
+
+El despliegue del _Front end_ se alojará con [Hostinger](https://www.hostinger.com/) y el backend y base de datos en AWS como se mencionó antes.
+
 ## Presupuesto Final
 | Gastos | Semanal | Mensual | Anual |
 | ------------- | ------------- | ------------- | ------------- |
