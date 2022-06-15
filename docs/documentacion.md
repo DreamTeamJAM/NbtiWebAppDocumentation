@@ -29,6 +29,31 @@ Configuración General de _CloudWatch_.
 
 Aqui podemos ver la utilización de los recursos con sus necesarios gets, puts y post para que puedan crearse, cambiarse o modificarse. 
 
+#### Configuración y despliegue del FrontEnd
+Para el despliegue del FontEnd, utilizaremos Hostinger.
+El primer pasó será ejecutar 
+
+``` npm run build ```
+
+Este comando nos compilará y optimizará todo nuestro proyecto, y creará una carpeta build.
+![HOSTINGER](../images/deploy_frontend1.jpg)
+
+Antes de subirlo, creamos un subdominio para nuestra web.
+![HOSTINGER](../images/deploy_frontend2.jpg)
+
+Una vez tenemos nuestro subdominio, eliminamos todos los archivos que contenga y subimos nuestra app.
+
+*Antes*
+![HOSTINGER](../images/deploy_frontend3.jpg)
+*Después*
+![HOSTINGER](../images/deploy_frontend4.jpg)
+
+Por último nos dirigimos a nuestro dominio y nos aparecerá nuestra web.
+![HOSTINGER](../images/deploy_frontend5.jpg)
+
+
+
+
 ## Manual de usuario
 
 #### Vista principal(_Home_):
