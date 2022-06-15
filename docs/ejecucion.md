@@ -1,4 +1,4 @@
-#### [Volver a Estudio del problema](estudio.md)
+##### [Volver a Estudio del problema](estudio.md)
 
 # Ejecución del Proyecto
 
@@ -523,3 +523,4 @@ spring.datasource.password=<password>
 spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
 ...
 ```
+##### [siguiente Sección: Documentación del sistema](documentacion.md)
