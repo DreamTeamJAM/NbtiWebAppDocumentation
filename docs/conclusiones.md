@@ -20,4 +20,4 @@ Una mala decisión de implementación que nos hemos dado cuenta, pero no era fea
 
  Si en el futuro volvemos a desarrollar con AWS, no cometermos el mismo error de diseño. Y si tuviesemos tiempo suficiente, migrar el proyecto de _back end_ a una implementación de Java puro.
 
- ##### [siguiente Sección: Bibliografía](bibligrafia.md)
+ ##### [siguiente Sección: Bibliografía](bibliografia.md)
