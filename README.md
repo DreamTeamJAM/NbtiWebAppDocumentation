@@ -29,9 +29,9 @@ Realizado por:
 	- [Manual de instalación y configuración de la aplicación](docs/documentacion.md#manual-de-instalación-y-configuración-de-la-aplicación)
 	- [Manual de usuario](docs/documentacion.md#manual-de-usuario)
 4. [Conclusiones finales](docs/conclusiones.md)
-	- [Grado de cumplimiento de los objetivos fijados](docs/conclusiones.md)
-	- [Propuesta de modificaciones o ampliaciones futuras del sistema](docs/conclusiones.md#grado-de-cumplimiento-de-ls-objetivos-fijados)
-5. [Bibliografía](docs/conclusiones.md#propuesta-de-modificiaciones-o-amplicaciones-futuras-al-sistema-implementado)
+	- [Grado de cumplimiento de los objetivos fijados](docs/conclusiones.md#grado-de-cumplimiento-de-ls-objetivos-fijados)
+	- [Propuesta de modificaciones o ampliaciones futuras del sistema](docs/conclusiones.md#propuesta-de-modificiaciones-o-amplicaciones-futuras-al-sistema-implementado)
+5. [Bibliografía](docs/bibliografia.md)
 
 		
 
