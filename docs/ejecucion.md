@@ -336,9 +336,9 @@ Ejemplo de configuracion de _PdfMake_
 ```
 
 
-### Implementación del proyecto de _Spring_
+## Implementación del proyecto de _Spring_
 El proyecto de Spring es una _Restful API_ Cuya única función es recibir y manejar peticiones y hacer la conexión con la base de datos.
-#### Configuración inicial
+### Configuración inicial
 El proyecto inicial de _Spring_ se ha generado usando [Spring initializr](https://start.spring.io/). Aquí podemos elegir las dependecias que va a tener el proyecto y se nos generá un proyecto de maven con las dependencias de _Spring Data JPA_, _Spring Security_, _Spring MVC_ y _PostgreSQL_ que vamos a usar, y posteriormente añadiremos a `pom.xml` la dependencia:
 ```
 <dependency>
@@ -348,9 +348,9 @@ El proyecto inicial de _Spring_ se ha generado usando [Spring initializr](https:
 </dependency>
 ```
 Que también necesitaremos para el despliegue en AWS.
-#### Estructura del código
+### Estructura del código
 La estructura del proyecto será MVC, pero como no tenemos acceso a las vistas desde este proyecto, la separación va a ser entre *modelos*, *repositorios*, *servicios* y *controladores*.
-##### Modelos de datos
+#### Modelos de datos
 En el paquete de modelos tendremos una serie de clases de _Java_ anotadas con _JPA_ que _Spring_ usará para hacer la estructura de la base de datos relacional. 
 
 ![diagrama ](../images/ClassDiagram.png)
@@ -378,7 +378,7 @@ public class Student extends NbtiEntity implements Payee {
 ...
 ```
 Extracto de ejemplo de una entidad modelo.
-##### Repositorios
+#### Repositorios
 La conexión con base de datos se hace en una serie de clases que llamamos _repositorios_. Que contienen la lógica que conecta con JDBC a nuestra base de datos. Spring tiene un sistema por el cual es capaz de generar todos los repositorios automáticamente por reflexión, solo mirando las clases del modelo y sus anotaciones. No solo crea las clases para conectar DB, si no que también se encarga de crear las tablas necesarias si no estan creadas, por lo que es responsable también de la definición de la base de datos.
 
 ```
@@ -388,9 +388,9 @@ public interface StudentRepository extends JpaRepository<Student, Long>{
 }
 ```
 Interfaz repositorio de Student.
-##### Controladores
+#### Controladores
 Esta serie de clases son las que reciben las peticiones a la API, y las que se encargan de devolver las respuestas. Las peticiones y llamadas casi siempre bien en formato JSON, y Spring Rest se encarga de intentar convertirlas en la clase de Java que esperamos. Las clases que usamos para modelar las peticiones y respuestas las llamamos _DTO_, _Data Transfer Object_. 
-###### DTO
+##### DTO
 Un DTO no es mas que una clase estandar de Java, que representa la información de un modelo que queremos transferir a otro sistema, en este caso, a traves de la API. Esta separación nos da más control de la información que mandamos por la red, y nos da más seguridad al no tener que acceder a las clases entidades conectadas a la base datos salvo cuando sea estrictamente necesario.
 ```
 public class StudentDto {
@@ -433,7 +433,7 @@ public class StudentController {
   ...
 ```
 Extracto de StudentController.
-##### Servicios
+#### Servicios
 Tenemos un servicio por cada modelo y es la capa donde se procesa el DTO, se valida la información y autorizaciones, y se invoca a los repositorios pertinentes para persistir información en la base de datos.
 
 ```
@@ -455,7 +455,7 @@ public Student checkedFindById(Long id) {
 ...
 ```
 Extracto de implementación de StudentService
-#### Integración con AWS
+### Integración con AWS
 Para que el servicio _Lambda_ de AWS al que vamos a subir el _back end_ entienda como usar el proyecto de Spring, tenemos que especificar en AWS Lambda cual va a ser la función del proyecto que debe invocar para arrancar el servidor, y esta función debe estar preparada para recibir las peticiones de AWS. Para esto tenemos la clase, `AwsLambdaHandler`:
 ```
 public class AwsLambdaHandler implements RequestStreamHandler {
@@ -480,7 +480,7 @@ public class AwsLambdaHandler implements RequestStreamHandler {
 
 }
 ```
-#### Seguridad 0Auth 2.0
+### Seguridad 0Auth 2.0
 La seguridad se maneja con un componente de _Spring_: _Spring Security_, especificando nuestro modelo de usuario, y creando clases de configuración de seguridad, podemos controlar el acceso a los endpoints de nuestra API.
 ```
 @Configuration
@@ -513,7 +513,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 ...
 ```
 Extracto de la configuración de Spring Security para nuestro protecto.
-#### Configuración de la Base de Datos
+### Configuración de la Base de Datos
 La base de datos es enteramente manejada por Spring, solo debemos darle las credenciales y _HOST_ en un archivo de propiedades, `application.properties`:
 ```
 ...
