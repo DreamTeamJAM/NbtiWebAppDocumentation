@@ -24,7 +24,7 @@ Información General de _Lambda_.
 
 Configuración General de _CloudWatch_.
 
-![AWS](../images/Api1.png)
+![AWS](../images/Api2.png)
 ![AWS](../images/Api2.png)
 
 Aqui podemos ver la utilización de los recursos con sus necesarios gets, puts y post para que puedan crearse, cambiarse o modificarse. 
