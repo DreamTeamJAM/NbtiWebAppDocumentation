@@ -1,8 +1,33 @@
-#### [Volver a Ejecución del Proyecto](ejecucion.md)
+##### [Volver a Ejecución del Proyecto](ejecucion.md)
 
 # Documentación del sistema
 
 ## Manual de instalación y configuración de la aplicación
+
+Para desplegrar Aws, primero necesitamos subir el paquete del proyecto con el comando:
+
+`mvn clean package shade:shade`
+
+Y después subirlo a Aws Lamba con tu usuario IAM.
+
+El Proyecto puede ser testeado en local por cualquier App de Spring, donde podrás desplegarlo en un server local.
+
+![AWS](../images/AWS.png)
+
+Como se puede observar Lambda, CloudWatch y Api Gateaway son los que más se utilizaron.
+
+![AWS](../images/Lambda.png)
+
+Información General de _Lambda_.
+
+![AWS](../images/CloudWatch.png)
+
+Configuración General de _CloudWatch_.
+
+![AWS](../images/Api1.png)
+![AWS](../images/Api2.png)
+
+Aqui podemos ver la utilización de los recursos con sus necesarios gets, puts y post para que puedan crearse, cambiarse o modificarse. 
 
 ## Manual de usuario
 
