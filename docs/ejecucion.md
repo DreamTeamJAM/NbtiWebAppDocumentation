@@ -234,7 +234,36 @@ está estructura permite ejecutar código en cada renderizado, o cuando cambie e
 ```
 En este ejemplo se usa para que el componente recupere los datos de usuario en el primer renderizado.
 
+#### Persistencia Local: Redux y React Context
 
+En el formulario principal tenemos que almacenar mucha información a lo largo de varios pasos, y necesitamos que la información persista y sea accesible a través de varios componentes. Para ello usamos _Redux_ una libreria que nos permite definir objetos que se pueden acceder desde cualquier componente.
+
+```
+
+export const studentSlice = createSlice({
+  name: "student",
+  initialState: {
+    id: "",
+    photo: "",
+    name: "",
+    dni: "",
+  ...
+  ,
+  reducers: {
+    updateStudent: (state, action) => {
+      return {
+        ...state,
+        ...action.payload,
+      };
+    },
+  },
+});
+
+export const { updateStudent } = studentSlice.actions;
+export const selectStudent = (state) => state.student;
+export default studentSlice.reducer;
+```
+Extracto de `StudentSlice`.
 #### Generación dinámica de formularios:
 
 Una de las partes mas extensas de este proyecto es lidiar con un formulario con un gran cantidad potencial de datos, para esto, hemos implementado un sistema que genera formularios según un objeto JSON que describe la estructura del formulario. 
